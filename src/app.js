@@ -4,9 +4,11 @@ import dotenv from 'dotenv';
 import c from 'chalk';
 import testRouter from '../routes/test.js';
 import path from 'path'
+import db from '../models/index.js';
 
 const { log } = console;
 const app = express();
+db.sequelize.sync();
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
