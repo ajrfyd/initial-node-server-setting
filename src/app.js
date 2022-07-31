@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import c from 'chalk';
 import testRouter from '../routes/test.js';
-import path from 'path'
+import path from 'node:path'
 import db from '../models/index.js';
 
 const { log } = console;
